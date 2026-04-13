@@ -1302,8 +1302,8 @@ button { cursor: pointer; }
 .tcard:nth-child(3) { border-top-color: var(--court-green) !important; }
 .tcard-num {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.12em;
+  font-size: 28px;
+  letter-spacing: 0.08em;
   color: var(--court-blue);
   margin-bottom: 16px;
 }
@@ -1507,7 +1507,7 @@ button { cursor: pointer; }
 .audience-card.ac-blue   { border-left-color: var(--court-blue) !important; }
 .audience-num {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 14px;
+  font-size: 32px;
   letter-spacing: 0.12em;
   color: var(--court-blue);
   margin-bottom: 8px;
@@ -1798,8 +1798,8 @@ button { cursor: pointer; }
   width: 65px;
   height: 65px;
   border-radius: 50% !important;
-  border: 2px solid var(--court-red);
-  box-shadow: 0 0 0 3px rgba(198,40,40,0.25);
+  border: 2px solid var(--court-blue);
+  box-shadow: 0 0 0 3px rgba(21,101,192,0.25);
   overflow: hidden;
 }
 .sticky-call-avatar img {
