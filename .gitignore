@@ -1,0 +1,23 @@
+# Raw source images (large, unoptimized camera roll)
+images/*.jpg
+images/*.mp4
+images/*.JPG
+images/*.MP4
+!images/logo.png
+
+# Keep optimized images (these are used by the site)
+!images/optimized/
+
+# Reference/draft files (large, not part of the live site)
+images-index.html
+wordpress-top36.html
+safeplaypro_homepage_7.html
+safeplaypro_homepage_prompt.html
+website-picks-top36/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Claude session files
+.claude/

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SafePlay Pro — Utah's Only Court + Track + Turf Specialist</title>
+<meta name="description" content="G-Max certified. CTB and CTCB certified. 1,000+ Utah facilities. Court surfacing, running track maintenance, synthetic turf, and G-Max safety testing. Salt Lake City, UT.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+============================================================ -->
+<nav id="nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo"><img src="data:image/png;base64,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" alt="SafePlay Pro" /></a>
+
+    <ul class="nav-links">
+      <li class="nav-dd">
+        <button class="nav-dd-toggle" aria-expanded="false" aria-haspopup="true">Services</button>
+        <div class="nav-dd-menu" role="menu">
+          <div class="nav-dd-menu-inner">
+            <a href="pickleball-court-surfacing-utah.html" role="menuitem">Pickleball Court Surfacing</a>
+            <a href="tennis-court-resurfacing-utah.html" role="menuitem">Tennis Court Resurfacing</a>
+            <a href="tennis-pickleball-court-construction-utah.html" role="menuitem">New Court Construction</a>
+            <a href="running-track-maintenance-utah.html" role="menuitem">Running Track Maintenance</a>
+            <a href="synthetic-turf-maintenance-utah.html" role="menuitem">Synthetic Turf Maintenance</a>
+            <a href="gmax-testing-utah.html" role="menuitem">G-Max Testing</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="#process">Our Process</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="tel:3038809362" class="nav-phone nav-btn-desk">303-880-9362</a>
+      <a href="#estimate" class="btn btn-blue nav-btn-desk">Get Estimate</a>
+      <button class="nav-ham" id="ham" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div id="nav-mobile" aria-label="Mobile navigation">
+  <a href="pickleball-court-surfacing-utah.html">Pickleball Court Surfacing</a>
+  <a href="tennis-court-resurfacing-utah.html">Tennis Court Resurfacing</a>
+  <a href="tennis-pickleball-court-construction-utah.html">New Court Construction</a>
+  <a href="running-track-maintenance-utah.html">Running Track Maintenance</a>
+  <a href="synthetic-turf-maintenance-utah.html">Synthetic Turf Maintenance</a>
+  <a href="gmax-testing-utah.html">G-Max Testing</a>
+  <a href="#process">Our Process</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#faq">FAQ</a>
+  <a href="tel:3038809362" class="mob-phone">&#9742;&nbsp; 303-880-9362</a>
+  <a href="#estimate" class="btn btn-blue">Get a Free Estimate</a>
+</div>
+
+<!-- ============================================================
+     HERO
+     Background image is set in #hero in style.css.
+============================================================ -->
+<section id="hero" aria-labelledby="hero-heading">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <span class="hero-eyebrow hero-eyebrow-bar">Pickleball Courts + Tennis Courts + Running Tracks</span>
+      <h1 class="hero-h1" id="hero-heading">UTAH'S #1 COURT<br>+ TRACK + TURF<br><span class="hero-accent">PROFESSIONAL.</span></h1>
+      <p class="hero-sub">G-Max certified. <strong>CTB and CTCB certified. 1,000+ Utah facilities.</strong> One point of contact from consultation to final striping.</p>
+      <div class="hero-ctas">
+        <a href="#estimate" class="btn btn-blue-lg">Get a Free Estimate</a>
+        <a href="tel:3038809362" class="btn btn-ghost-lg">&#9742;&nbsp; 303-880-9362</a>
+      </div>
+      <div class="hero-chips reveal" style="transition-delay:.22s">
+        <span class="hero-chip"><span class="hero-chip-dot dot-blue"></span>CTCB Certified Tennis Court Builder</span>
+        <span class="hero-chip"><span class="hero-chip-dot dot-red"></span>CTB Certified Track Builder</span>
+        <span class="hero-chip"><span class="hero-chip-dot dot-green"></span>Utah Jazz Community Court</span>
+      </div>
+    </div>
+
+    <div class="hero-right reveal">
+      <div class="cred-card">
+        <span class="eyebrow">Why You Can Trust Me</span>
+        <div class="cred-stat" id="cred-stat">1,000+</div>
+        <p class="cred-body">Sport facilities serviced across Utah and the Rocky Mountain region.</p>
+        <div class="cred-certs">
+          <div class="cred-cert-row">
+            <span class="chip">CTB</span>
+            <span class="cred-cert-label">Certified Track Builder</span>
+          </div>
+          <div class="cred-cert-row">
+            <span class="chip">CTCB</span>
+            <span class="cred-cert-label">Certified Tennis Court Builder</span>
+          </div>
+          <div class="cred-cert-row">
+            <span class="chip">UFOMA</span>
+            <span class="cred-cert-label">Utah Facility Operations Managers</span>
+          </div>
+          <div class="cred-cert-row">
+            <span class="chip">UIAAA</span>
+            <span class="cred-cert-label">Utah Interscholastic Athletic Admins</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRUST BAR
+============================================================ -->
+<div id="trust" aria-label="Key statistics">
+  <div class="trust-inner">
+    <div class="trust-stat reveal">
+      <div class="trust-num c-blue">1,000+</div>
+      <div class="trust-lbl">Facilities Serviced</div>
+    </div>
+    <div class="trust-stat reveal" style="transition-delay:.08s">
+      <div class="trust-num c-red">CTB / CTCB</div>
+      <div class="trust-lbl">Certified</div>
+    </div>
+    <div class="trust-stat reveal" style="transition-delay:.16s">
+      <div class="trust-num c-green">15+</div>
+      <div class="trust-lbl">Years Experience</div>
+    </div>
+    <div class="trust-stat reveal" style="transition-delay:.24s">
+      <div class="trust-num c-blue">JAZZ</div>
+      <div class="trust-lbl">Utah Jazz Community Court</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     GALLERY
+============================================================ -->
+<section id="gallery" aria-labelledby="gallery-heading">
+  <div class="gallery-hd">
+    <div>
+      <span class="eyebrow">Recent Work</span>
+      <h2 class="bebas reveal" id="gallery-heading" style="font-size:clamp(36px,5vw,56px);color:var(--text-dark);">THE COURTS<br>WE STAND BEHIND.</h2>
+    </div>
+    <a href="#fullgallery" class="btn btn-outline-blue" style="flex-shrink:0;align-self:flex-end;">View Full Gallery</a>
+  </div>
+
+  <div class="gallery-grid">
+
+    <!-- Slot 1 — large, spans 2 rows -->
+    <div class="gslot gslot-large">
+      <img src="images/optimized/20191009_103107.jpg"
+           alt="Massive multi-court pickleball complex with the Wasatch mountain range in the background and fall foliage"
+           loading="lazy"
+           style="width:100%;height:100%;object-fit:cover;">
+      <div class="gslot-ov">
+        <span class="gslot-lbl">Pickleball Complex — Wasatch Range</span>
+      </div>
+    </div>
+
+    <!-- Slot 2 -->
+    <div class="gslot">
+      <img src="images/optimized/20240613_133120.jpg"
+           alt="Massive multi-court tennis complex installed by SafePlay Pro"
+           loading="lazy"
+           style="width:100%;height:100%;object-fit:cover;">
+      <div class="gslot-ov"><span class="gslot-lbl">Multi-Court Tennis Complex</span></div>
+    </div>
+
+    <!-- Slot 3 -->
+    <div class="gslot">
+      <img src="images/optimized/20230714_153450.jpg"
+           alt="Clean double pickleball court with crisp blue surface"
+           loading="lazy"
+           style="width:100%;height:100%;object-fit:cover;">
+      <div class="gslot-ov"><span class="gslot-lbl">Pickleball Courts</span></div>
+    </div>
+
+    <!-- Slot 4 -->
+    <div class="gslot">
+      <img src="images/optimized/20230605_170541.jpg"
+           alt="Sport court framed by Utah fall foliage"
+           loading="lazy"
+           style="width:100%;height:100%;object-fit:cover;">
+      <div class="gslot-ov"><span class="gslot-lbl">Scenic Fall Installation</span></div>
+    </div>
+
+    <!-- Slot 5 -->
+    <div class="gslot">
+      <img src="images/optimized/20210609_140512.jpg"
+           alt="Sport court under dramatic Utah cloud cover"
+           loading="lazy"
+           style="width:100%;height:100%;object-fit:cover;">
+      <div class="gslot-ov"><span class="gslot-lbl">Outdoor Court — Utah Skies</span></div>
+    </div>
+
+    <!-- Slot 6 — panoramic strip across full width -->
+    <div class="gslot gslot-wide">
+      <img src="images/optimized/20240613_132746.jpg"
+           alt="Aerial view of multi-court installation in a Utah mountain valley"
+           loading="lazy"
+           style="width:100%;height:100%;object-fit:cover;">
+      <div class="gslot-ov"><span class="gslot-lbl">Aerial — Mountain Valley Complex</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES GRID
+============================================================ -->
+<section id="services" aria-labelledby="svc-heading">
+  <div class="services-inner">
+      <div class="services-hd">
+        <span class="eyebrow">What We Do</span>
+        <h2 class="bebas reveal" id="svc-heading" style="font-size:clamp(40px,5vw,56px);color:var(--text-dark);">EVERY SURFACE.<br>EVERY STANDARD.</h2>
+      </div>
+
+      <div class="svc-grid">
+
+        <!-- Card A: Pickleball & Tennis -->
+        <div class="svc-card reveal">
+          <div class="svc-badges">
+            <span class="badge badge-blue">Clubs + Universities + Homes</span>
+          </div>
+          <div class="svc-name">Pickleball &amp; Tennis</div>
+          <p class="svc-body">High-end court construction, resurfacing, conversions, and crack repair — built to country club standards whether it's a university campus or your backyard. We're the standard, not the alternative.</p>
+          <a href="#estimate" class="btn btn-text btn-text-blue">Learn More &rarr;</a>
+        </div>
+
+        <!-- Card B: Running Track -->
+        <div class="svc-card reveal" style="transition-delay:.08s">
+          <div class="svc-badges">
+            <span class="badge badge-blue">Uncontested in Utah</span>
+          </div>
+          <div class="svc-name">Running Track</div>
+          <p class="svc-body">Crack repair, cleaning, striping, CAD record keeping, and budget forecasting. No other Utah contractor provides this level of dedicated track maintenance.</p>
+          <a href="#estimate" class="btn btn-text btn-text-red">Learn More &rarr;</a>
+        </div>
+
+        <!-- Card C: Synthetic Turf -->
+        <div class="svc-card reveal" style="transition-delay:.16s">
+          <div class="svc-badges">
+            <span class="badge badge-blue">Uncontested in Utah</span>
+            <span class="badge badge-green">G-Max Compliant</span>
+          </div>
+          <div class="svc-name">Synthetic Turf</div>
+          <p class="svc-body">Grooming, infill aeration, G-Max impact testing, turf repairs, and CAD delivery. We maintain what others only install.</p>
+          <a href="#estimate" class="btn btn-text btn-text-green">Learn More &rarr;</a>
+        </div>
+
+        <!-- G-Max Featured Card (spans 2 cols) -->
+        <div class="svc-card svc-card-gmax reveal">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:16px;">
+            <span class="badge badge-red">No Competitor Offers This</span>
+          </div>
+          <div class="svc-name" style="color:#fff;">G-MAX SAFETY TESTING</div>
+          <p class="svc-body">Independent G-Max impact testing. ASTM F355-A and ASTM F1936 compliant. SafePlay Pro is the only Utah contractor providing this service — not Renner Sports, not Ace Courts, not any other competitor. Every school, municipality, and facility manager in Utah with synthetic turf needs this test.</p>
+          <div class="gmax-proof">
+            <div class="gmax-proof-item">ASTM F355-A</div>
+            <div class="gmax-proof-item">ASTM F1936</div>
+            <div class="gmax-proof-item">0 Utah Competitors</div>
+          </div>
+          <a href="gmax-testing-utah.html" class="btn btn-red">Schedule G-Max Testing</a>
+        </div>
+
+        <!-- Court Accessories -->
+        <div class="svc-card reveal" style="transition-delay:.08s">
+          <div class="svc-badges"><span></span></div>
+          <div class="svc-name">Court Accessories</div>
+          <p class="svc-body">Nets, posts, windscreens, lighting, and custom accessories. Everything your court needs, sourced and installed by the same person who surfaced it.</p>
+          <a href="#estimate" class="btn btn-text btn-text-blue">Learn More &rarr;</a>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+============================================================ -->
+<section id="testimonials" aria-labelledby="test-heading">
+  <div class="testimonials-inner">
+    <div class="test-hd">
+      <span class="eyebrow" style="color:var(--court-red);">What Clients Say</span>
+      <h2 class="bebas reveal" id="test-heading" style="font-size:clamp(36px,4vw,48px);color:#fff;">TRUSTED<br>ACROSS UTAH.</h2>
+    </div>
+    <div class="test-grid">
+      <div class="tcard reveal">
+        <div class="tcard-num">01</div>
+        <p class="tcard-quote">&ldquo;Brian was the only contractor we spoke with who could answer detailed ASTM compliance questions on the spot. Showed up on time, finished ahead of schedule, and delivered CAD documentation the same week.&rdquo;</p>
+        <div class="tcard-name">Athletic Director</div>
+        <div class="tcard-org">Utah High School District</div>
+      </div>
+      <div class="tcard reveal" style="transition-delay:.10s">
+        <div class="tcard-num">02</div>
+        <p class="tcard-quote">&ldquo;We had three quotes. Brian&rsquo;s was not the cheapest. We went with him because he was the only one who told us exactly what materials he uses and why they last longer. Three years in, the court looks like day one.&rdquo;</p>
+        <div class="tcard-name">Homeowner</div>
+        <div class="tcard-org">Salt Lake City, UT</div>
+      </div>
+      <div class="tcard reveal" style="transition-delay:.20s">
+        <div class="tcard-num">03</div>
+        <p class="tcard-quote">&ldquo;G-Max testing for our facility was something we knew we needed but couldn&rsquo;t find locally. SafePlay Pro is the only Utah company that does it. Results and documentation in 48 hours &mdash; exactly what our insurance required.&rdquo;</p>
+        <div class="tcard-name">Facilities Manager</div>
+        <div class="tcard-org">Utah County Recreation District</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW WE WORK — Process / Trust spine
+============================================================ -->
+<section id="process" aria-labelledby="process-heading">
+  <div class="process-inner">
+    <div class="process-hd reveal">
+      <span class="eyebrow">How We Work</span>
+      <h2 class="process-h2 bebas" id="process-heading">BUILT ON TRUST.<br>PROVEN BY PROCESS.</h2>
+      <p class="process-lede">Most court projects fail before the first coat goes down — bad prep, rushed scheduling, multiple subcontractors, low-grade materials. We do the opposite. Here's how every SafePlay Pro project runs.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-card reveal">
+        <div class="process-num">01</div>
+        <h3 class="process-name">One Point of Contact</h3>
+        <p class="process-body">The person you talk to on day one is the same person who walks the finished court with you. No handoffs, no project managers playing telephone, no "let me check with the crew." Brian runs every project from consultation to final striping.</p>
+      </div>
+
+      <div class="process-card reveal" style="transition-delay:.08s">
+        <div class="process-num">02</div>
+        <h3 class="process-name">Honest Scheduling</h3>
+        <p class="process-body">A real start date and a real completion date — and we hit them. No vague promises, no disappearing crews, no "we'll be back next week" for three weeks. We show up when we say we will, and we tell you up front if weather pushes the timeline.</p>
+      </div>
+
+      <div class="process-card reveal" style="transition-delay:.16s">
+        <div class="process-num">03</div>
+        <h3 class="process-name">Premium Materials Only</h3>
+        <p class="process-body">No shortcuts, no watered-down systems, no low-grade franchise paint that fades in two summers. We use the highest-UV-stability materials on the market — the same systems trusted by country clubs, universities, and the Utah Jazz.</p>
+      </div>
+
+      <div class="process-card reveal" style="transition-delay:.24s">
+        <div class="process-num">04</div>
+        <h3 class="process-name">Clean, Respectful Job Sites</h3>
+        <p class="process-body">We're working at your home or your facility — not just a job site. Surrounding landscaping is protected, hardscapes are covered, materials are organized, and the site is left clean every night. You'll barely know we're there.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     UTAH JAZZ BANNER
+============================================================ -->
+<section id="jazz" aria-labelledby="jazz-heading">
+  <div class="jazz-inner">
+    <div class="jazz-img">
+      <img src="images/optimized/20180605_164530.jpg"
+           alt="Utah Jazz community court — center-court Jazz logo with adjacent playground"
+           loading="lazy"
+           style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Featured Project</span>
+      <h2 class="bebas jazz-h2" id="jazz-heading">UTAH JAZZ<br>COMMUNITY COURT</h2>
+      <p class="jazz-body">SafePlay Pro built and surfaced the Utah Jazz community court — one of the highest-profile sport facility projects in Utah. The expertise behind NBA-level work is available for your facility.</p>
+      <a href="#estimate" class="btn btn-text btn-text-blue">See the Project &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FULL GALLERY CAROUSEL (in-page, full bleed)
+============================================================ -->
+<section id="fullgallery" aria-labelledby="fg-heading">
+  <div class="fg-hd">
+    <span class="eyebrow">Browse The Archive</span>
+    <h2 class="bebas reveal" id="fg-heading">EVERY PROJECT.<br>EVERY ANGLE.</h2>
+  </div>
+  <div class="fg-stage">
+    <button type="button" class="fg-nav fg-prev" id="fg-prev" aria-label="Previous image">&#8249;</button>
+    <img class="fg-img" id="fg-img" src="" alt="">
+    <button type="button" class="fg-nav fg-next" id="fg-next" aria-label="Next image">&#8250;</button>
+  </div>
+  <div class="fg-meta">
+    <span class="fg-counter" id="fg-counter">1 / 28</span>
+  </div>
+</section>
+
+<!-- ============================================================
+     CERTIFICATIONS
+============================================================ -->
+<section id="certs" aria-labelledby="certs-heading">
+  <div class="certs-inner">
+    <div class="reveal">
+      <span class="eyebrow">Credentials</span>
+      <h2 class="bebas certs-h2" id="certs-heading">CERTIFIED<br>WHERE IT<br>COUNTS.</h2>
+      <p class="certs-body">Brian holds the same certifications as the top staff at regional benchmark Renner Sports. CTB and CTCB are not entry-level badges — they are the standard institutional buyers should demand from any contractor.</p>
+    </div>
+    <div class="cert-tiles reveal" style="transition-delay:.14s">
+      <div class="ctile ct-b">
+        <div class="ctile-code cc-b">CTB</div>
+        <div class="ctile-name">Certified Track Builder</div>
+        <div class="ctile-org">USTFCCCA</div>
+      </div>
+      <div class="ctile ct-r">
+        <div class="ctile-code cc-r">CTCB</div>
+        <div class="ctile-name">Certified Tennis Court Builder</div>
+        <div class="ctile-org">ASBA</div>
+      </div>
+      <div class="ctile ct-g">
+        <div class="ctile-code cc-g">UFOMA</div>
+        <div class="ctile-name">Utah Facility Operations Managers</div>
+        <div class="ctile-org">Member</div>
+      </div>
+      <div class="ctile ct-b">
+        <div class="ctile-code cc-b">UIAAA</div>
+        <div class="ctile-name">Utah Interscholastic Athletic Admins</div>
+        <div class="ctile-org">Member</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ — Objection handling before the form
+============================================================ -->
+<section id="faq" aria-labelledby="faq-heading">
+  <div class="faq-inner">
+    <div class="faq-hd reveal">
+      <span class="eyebrow">Frequently Asked</span>
+      <h2 class="faq-h2 bebas" id="faq-heading">QUESTIONS WE GET<br>BEFORE EVERY PROJECT.</h2>
+      <p class="faq-lede">If you're shopping court contractors right now, these are the three questions that matter most. Honest answers below.</p>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item reveal">
+        <summary>
+          <span class="faq-q">My court is peeling or bubbling. What can I do?</span>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-a">
+          <p>Peeling and bubbling almost always mean the surface failed to bond to the concrete underneath. There are four common causes — and one expensive fix.</p>
+          <ul class="faq-causes">
+            <li><strong>Bad concrete prep.</strong> The contractor didn't spend enough time prepping the slab and applying a high-quality sealer before surfacing. This is the #1 cause we see.</li>
+            <li><strong>Surfacing in cold weather.</strong> The material was applied when it wasn't warm enough to fully cure.</li>
+            <li><strong>Rushed coats.</strong> Second or third coats applied before the prior coat had fully cured.</li>
+            <li><strong>Low-grade materials.</strong> Cheap paint and cheap sealer — also extremely common.</li>
+          </ul>
+          <p><strong>What it takes to fix it the right way:</strong> If a court is peeling in one spot, it's almost always peeling everywhere — even where you can't see it yet. Patching and repainting buys a year or two at most. The honest fix is to grind or pressure-wash the entire surface back to bare concrete and start over with proper prep, sealer, and a quality coating system. It costs more up front, but every future resurface is fast and clean because the foundation is finally right. <strong>This is why hiring the wrong contractor the first time is the most expensive way to build a court.</strong></p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal" style="transition-delay:.06s">
+        <summary>
+          <span class="faq-q">Should we choose a permanent or portable pickleball net system?</span>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-a">
+          <p><strong>For most residential courts: portable (or semi-permanent) nets win.</strong> A good portable net plays as well as a permanent one, but it gives you the freedom to switch your court from pickleball to basketball to scooters to sidewalk chalk in under a minute. If you have kids, that flexibility is worth more than you think — it's the difference between a court that gets used every day and one that becomes a source of family arguments.</p>
+          <p>Portable systems also simplify the build, save you money, eliminate one more place for cracks to start in the slab, and keep your future options open as your family changes.</p>
+          <p><strong>For country clubs, universities, and public facilities: permanent systems are usually right.</strong> The court is purpose-built and doesn't need to flex between uses. We install both and we'll tell you honestly which one fits your project.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal" style="transition-delay:.12s">
+        <summary>
+          <span class="faq-q">There are a lot of court contractors in Utah now. How do I choose one?</span>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-a">
+          <p>Five years ago there were four real court contractors in Utah and Idaho. Today there are dozens of websites — and very little real experience behind most of them. Here are the questions that actually separate the pros from the pretenders:</p>
+          <ul class="faq-causes">
+            <li><strong>How many years have you actually been building courts in Utah?</strong> Not how long the website has existed — how many seasons crews have been on courts.</li>
+            <li><strong>What materials do you use, and do they come pre-pigmented or are they mixed on site?</strong> Pre-pigmented systems hold color far longer.</li>
+            <li><strong>What's your warranty — and will you still be in business to honor it in five years?</strong></li>
+            <li><strong>Are they detailed, organized, and clearly trying to help you accomplish your goals?</strong> Or are they just trying to close a sale?</li>
+            <li><strong>Don't pick on price alone.</strong> The lowest bid is almost never the best value, and the most expensive isn't automatically the best either.</li>
+          </ul>
+          <p><strong>One more thing worth knowing.</strong> Utah has a local franchise that sells low-cost court paint to anyone who walks in the door — no qualifications, no training, no experience requirements. That's the single biggest reason Utah has so many "court contractors" now, and it's the single biggest reason we get called in to tear out failed courts and start over. If your contractor is using that paint, there's a 90% chance no one ever taught them how to do this work properly — they're figuring it out on your court. And once a bad first surface goes down, we can't just paint over it. We have to grind it off and start from bare concrete. <strong>That's the most expensive way to do your court.</strong> Ask what brand of materials your contractor uses, and ask why.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ESTIMATE FORM — Dark Section 2
+============================================================ -->
+<section id="estimate" aria-labelledby="est-heading">
+  <div class="est-inner">
+    <div class="reveal">
+      <span class="eyebrow">Get a Free Estimate</span>
+      <h2 class="est-h2" id="est-heading">LET'S TALK ABOUT<br>YOUR NEEDS.</h2>
+      <p class="est-body">No hard sell. No mystery pricing. Brian will review your project and give you an honest assessment of what it takes and what it costs.</p>
+      <span class="est-phone-lbl">Prefer to call?</span>
+      <a href="tel:3038809362" class="est-phone">&#9742;&nbsp; 303-880-9362</a>
+    </div>
+
+    <div class="reveal" style="transition-delay:.14s">
+      <form id="est-form" action="#" method="POST" novalidate>
+        <div class="fgrid">
+          <div class="ffield">
+            <label class="flabel" for="f-name">Name<span class="req">*</span></label>
+            <input class="finput" type="text" id="f-name" name="name" required placeholder="Your name">
+          </div>
+          <div class="ffield">
+            <label class="flabel" for="f-org">Organization</label>
+            <input class="finput" type="text" id="f-org" name="org" placeholder="School, club, city, or homeowner">
+          </div>
+          <div class="ffield">
+            <label class="flabel" for="f-phone">Phone<span class="req">*</span></label>
+            <input class="finput" type="tel" id="f-phone" name="phone" required placeholder="Your phone number">
+          </div>
+          <div class="ffield">
+            <label class="flabel" for="f-service">Service Needed</label>
+            <select class="fselect" id="f-service" name="service">
+              <option value="" disabled selected>Select a service</option>
+              <option value="pickleball">Pickleball Court</option>
+              <option value="court">Court Surfacing</option>
+              <option value="track">Running Track</option>
+              <option value="turf">Synthetic Turf</option>
+              <option value="gmax">G-Max Testing</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="ffield fw">
+            <label class="flabel" for="f-msg">Message</label>
+            <textarea class="ftextarea" id="f-msg" name="message" placeholder="Tell us about your facility or project"></textarea>
+          </div>
+          <button type="submit" class="fsubmit" id="fsubmit">Send My Request</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer id="footer" aria-label="Site footer">
+  <div class="foot-inner">
+    <div>
+      <a href="#hero" class="foot-logo" aria-label="SafePlay Pro home"><img src="images/logo.png" alt="SafePlay Pro"></a>
+      <p class="foot-tag">Utah's #1 Court + Track<br>+ Turf Specialist</p>
+      <div class="foot-chips">
+        <span class="fchip">CTB</span>
+        <span class="fchip">CTCB</span>
+        <span class="fchip">UFOMA</span>
+        <span class="fchip">UIAAA</span>
+      </div>
+    </div>
+    <div>
+      <span class="fcol-lbl">Services</span>
+      <ul class="flinks">
+        <li><a href="tennis-court-resurfacing-utah.html">Tennis Court Resurfacing</a></li>
+        <li><a href="pickleball-court-surfacing-utah.html">Pickleball Courts</a></li>
+        <li><a href="tennis-pickleball-court-construction-utah.html">New Court Construction</a></li>
+        <li><a href="running-track-maintenance-utah.html">Running Track</a></li>
+        <li><a href="synthetic-turf-maintenance-utah.html">Synthetic Turf</a></li>
+        <li><a href="gmax-testing-utah.html">G-Max Testing</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="fcol-lbl">Company</span>
+      <ul class="flinks">
+        <li><a href="#testimonials">About</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#estimate">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="fcol-lbl">Contact</span>
+      <div class="fcontact-line">3096 S. 465 W.<br>Salt Lake City, UT 84115</div>
+      <div class="fcontact-line" style="margin-top:12px;"><a href="tel:3038809362">303-880-9362</a></div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span class="foot-copy">&copy; 2026 SafePlay Pro. All rights reserved.</span>
+    <div class="astm-chips">
+      <span class="achip">ASTM F355-A</span>
+      <span class="achip">ASTM F1936</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     STICKY CALL BAR (appears after scrolling past hero)
+============================================================ -->
+<aside class="sticky-call" id="sticky-call" aria-hidden="true">
+  <div class="sticky-call-inner">
+    <div class="sticky-call-avatar"><img src="images/optimized/brian-headshot.png" alt="Brian — SafePlay Pro" width="52" height="52"></div>
+    <div class="sticky-call-text">
+      <span class="sticky-call-eyebrow">Direct Line</span>
+      <span class="sticky-call-headline">Call Brian Now. He answers his own phone.</span>
+    </div>
+    <a href="tel:3038809362" class="sticky-call-cta">
+      <span class="sticky-call-icon" aria-hidden="true">&#9742;</span>
+      <span class="sticky-call-num">303-880-9362</span>
+    </a>
+    <button type="button" class="sticky-call-close" id="sticky-call-close" aria-label="Dismiss call bar">&times;</button>
+  </div>
+</aside>
+
+<!-- ============================================================
+     JAVASCRIPT
+============================================================ -->
+<script src="main.js"></script>
+</body>
+</html>
