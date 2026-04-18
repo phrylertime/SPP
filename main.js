@@ -175,6 +175,7 @@ document.querySelectorAll('.lp-photo-carousel').forEach(section => {
   const raw = section.getAttribute('data-pc-images') || '';
   const images = raw.split(',').map(s => s.trim()).filter(Boolean);
   if (!images.length) return;
+  const label = section.getAttribute('aria-label') || 'Sport court by SafePlay Pro';
   const img = section.querySelector('.pc-img');
   const counter = section.querySelector('.pc-counter');
   const prev = section.querySelector('.pc-prev');
@@ -187,7 +188,7 @@ document.querySelectorAll('.lp-photo-carousel').forEach(section => {
     const n = new Image();
     n.onload = () => {
       img.src = n.src;
-      img.alt = `Pickleball court by SafePlay Pro — image ${idx + 1} of ${images.length}`;
+      img.alt = `${label} — image ${idx + 1} of ${images.length}`;
       img.classList.add('loaded');
     };
     n.src = `images/optimized/${images[idx]}`;
