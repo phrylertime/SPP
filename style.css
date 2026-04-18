@@ -2144,3 +2144,15 @@ button { cursor: pointer; }
   .fg-next { right: 14px; }
   .fg-meta { padding: 0 24px; margin-top: 16px; }
 }
+
+/* Inline photo carousel (for landing page photo breaks) */
+.lp-photo-carousel { position: relative; }
+.lp-photo-carousel .fg-stage {
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  aspect-ratio: 21 / 9;
+}
+@media (max-width: 768px) {
+  .lp-photo-carousel .fg-stage { aspect-ratio: 4 / 3; }
+}

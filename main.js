@@ -169,3 +169,41 @@ if (fgSection && fgImg && fgCounter && fgPrev && fgNext) {
 
   fgShow(0);
 }
+
+/* Inline photo carousels — any <section class="lp-photo-carousel" data-pc-images="a.jpg,b.jpg,..."> */
+document.querySelectorAll('.lp-photo-carousel').forEach(section => {
+  const raw = section.getAttribute('data-pc-images') || '';
+  const images = raw.split(',').map(s => s.trim()).filter(Boolean);
+  if (!images.length) return;
+  const img = section.querySelector('.pc-img');
+  const counter = section.querySelector('.pc-counter');
+  const prev = section.querySelector('.pc-prev');
+  const next = section.querySelector('.pc-next');
+  if (!img || !prev || !next) return;
+  let idx = 0;
+  const show = i => {
+    idx = (i + images.length) % images.length;
+    img.classList.remove('loaded');
+    const n = new Image();
+    n.onload = () => {
+      img.src = n.src;
+      img.alt = `Pickleball court by SafePlay Pro — image ${idx + 1} of ${images.length}`;
+      img.classList.add('loaded');
+    };
+    n.src = `images/optimized/${images[idx]}`;
+    if (counter) counter.textContent = `${idx + 1} / ${images.length}`;
+  };
+  prev.addEventListener('click', () => show(idx - 1));
+  next.addEventListener('click', () => show(idx + 1));
+  let inView = false;
+  new IntersectionObserver(entries => {
+    entries.forEach(e => { inView = e.isIntersecting; });
+  }, { threshold: 0.35 }).observe(section);
+  document.addEventListener('keydown', e => {
+    if (!inView) return;
+    if (e.key === 'ArrowLeft') show(idx - 1);
+    else if (e.key === 'ArrowRight') show(idx + 1);
+  });
+  // Mark first image loaded (already in src)
+  img.classList.add('loaded');
+});
