@@ -4,15 +4,32 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A static single-page marketing site being built for **SafePlay Pro**, a Utah sport-surface contractor (pickleball, tennis, running tracks, synthetic turf, G-Max testing). This is an agency deliverable, not a web app — there is no build system, no package manager, no tests, and no server. Open `index.html` in a browser to preview.
+A static multi-page marketing site being built for **SafePlay Pro**, a Utah sport-surface contractor (court surfaces, tennis, running tracks, synthetic turf, G-Max testing). This is an agency deliverable, not a web app — there is no build system, no package manager, no tests, and no server. Open `index.html` (or any landing page) in a browser to preview.
+
+The homepage (`index.html`) is the main marketing page. Alongside it sit service/SEO landing pages that all share `style.css` and `main.js`:
+
+- `pickleball-court-surfacing-utah.html` plus city variants (`-park-city`, `-salt-lake-city`, `-st-george`)
+- `tennis-court-resurfacing-utah.html`, `tennis-pickleball-court-construction-utah.html`
+- `running-track-maintenance-utah.html`, `synthetic-turf-maintenance-utah.html`, `gmax-testing-utah.html`
+
+Each landing page duplicates the nav (services dropdown + mobile nav) and footer markup from `index.html`. **When the nav or footer changes, it has to change on every page** — this is the biggest footgun in the repo. Grep for the nav anchor (e.g. `nav-dd-toggle`) to find every copy before editing.
 
 Full client/positioning context lives in `safeplaypro-CLAUDE.md` — read it before making content, messaging, or structural decisions. Key points: lead with the **Utah Jazz community court** renovation and **G-Max testing** (underplayed differentiators), address **B2B institutional** and **residential** audiences separately, and never lean on generic "quality / years of experience" language.
 
+## Deployment
+
+`.github/workflows/static.yml` auto-deploys to GitHub Pages on every push to `main` — the entire repo is uploaded as the artifact (no build step, no path filtering). Anything committed to `main`, including drafts and raw images in `images/`, ships. There is no preview environment.
+
+### Cache busting
+
+HTML files reference `style.css?v=N` and `main.js?v=N` (currently `?v=3`). Bump the version in **every** HTML file whenever you make a substantive CSS or JS change so returning visitors don't get a stale GitHub Pages cache. Grep for `?v=` to catch them all.
+
 ## File layout
 
-- `index.html` — the current working build (markup only). Links to `style.css` in `<head>` and `main.js` right before `</body>`.
-- `style.css` — all site styles. Design tokens (CSS variables) live at the top; sections follow the same numbered order as the markup.
-- `main.js` — nav scroll shadow, hamburger, `.reveal` scroll-in, counter animation, active-nav IntersectionObserver, and the estimate-form validation/submit handler.
+- `index.html` — homepage (markup only). Links to `style.css` in `<head>` and `main.js` right before `</body>`.
+- Service landing pages (see list above) — each is a standalone HTML file sharing the same `style.css` / `main.js`.
+- `style.css` — all site styles, shared across every page. Design tokens (CSS variables) live at the top; sections follow the same numbered order as the homepage markup.
+- `main.js` — shared behavior for all pages: nav scroll shadow, hamburger, services dropdown (click-toggle + outside-click close), `.reveal` scroll-in, counter animation, active-nav IntersectionObserver, estimate-form validation, sticky call bar, full-bleed homepage gallery (`#fullgallery`), and the generic `.lp-photo-carousel` used on landing pages.
 - `safeplaypro_homepage_7.html`, `safeplaypro_homepage_prompt.html` — older homepage iterations/drafts. Do not edit unless asked; treat as reference only.
 - `images-index.html` (~17 MB) — standalone dark-themed contact-sheet page used to review/pick photos from the client's raw camera roll. Self-contained, not linked from the site.
 - `wordpress-top36.html` (~6 MB) — WordPress-flavored export of the same photo picks.
@@ -48,6 +65,15 @@ img.save('images/optimized/SOURCE.jpg', 'JPEG', quality=82, optimize=True, progr
 Targets: max 1920px longest side, quality 82, progressive, EXIF stripped. Typical results: 2–5 MB → 200–800 KB per file.
 
 **Chromium quirk:** Pillow's saved JPEGs include a JFIF density field that triggers unwanted rotation when used as a CSS `background-image` for portrait photos. The `#hero` rule already includes `image-orientation: none` to disable that — keep it there if you swap the hero background to another portrait file. `<img>` elements are unaffected.
+
+## Photo carousels
+
+Two carousel systems exist, both reading from `images/optimized/`:
+
+1. **Full-bleed homepage gallery** (`#fullgallery` on `index.html`) — image list is **hard-coded** in `main.js` in the `fgImages` array near the top of the carousel block. To change it, edit the array in `main.js` and bump the cache-buster.
+2. **Generic landing-page carousel** — any section with `class="lp-photo-carousel"` and a `data-pc-images="a.jpg,b.jpg,c.jpg"` attribute is auto-wired by `main.js`. The section must contain `.pc-img`, `.pc-counter`, `.pc-prev`, `.pc-next` child elements (see an existing landing page for the exact markup). Filenames in `data-pc-images` are relative to `images/optimized/`.
+
+Both carousels support left/right arrow keys when the section is in view and preload the next image before swapping `src`.
 
 ## Structure of `index.html`
 
