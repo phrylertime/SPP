@@ -907,7 +907,7 @@ button { cursor: pointer; }
   margin: 0 0 26px 0;
 }
 .lp-hero-accent {
-  background: linear-gradient(90deg, #7FD0FF 0%, #FFB3B3 50%, #A8E6A8 100%);
+  background: linear-gradient(90deg, #7FD0FF 0%, #A8E6A8 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
