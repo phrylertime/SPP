@@ -48,7 +48,7 @@ function runCounter(el, target, suffix, duration) {
   (function tick(now) {
     const p = Math.min((now - start) / duration, 1);
     const ease = 1 - Math.pow(1 - p, 3);
-    el.textContent = Math.floor(ease * target) + suffix;
+    el.textContent = Math.floor(ease * target).toLocaleString() + suffix;
     if (p < 1) requestAnimationFrame(tick);
   })(start);
 }
@@ -56,7 +56,7 @@ const credStat = document.getElementById('cred-stat');
 if (credStat) {
   const counterObs = new IntersectionObserver((entries) => {
     entries.forEach(e => {
-      if (e.isIntersecting) { runCounter(credStat, 1000, '+', 1400); counterObs.unobserve(e.target); }
+      if (e.isIntersecting) { runCounter(credStat, 10000, '+', 1400); counterObs.unobserve(e.target); }
     });
   }, { threshold: 0.5 });
   counterObs.observe(credStat);
