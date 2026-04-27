@@ -1253,7 +1253,7 @@ button { cursor: pointer; }
 .certs-body { font-size: 19px; color: var(--text-mid); line-height: 1.70; }
 .cert-tiles {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2px;
 }
 .ctile {
