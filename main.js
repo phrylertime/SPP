@@ -56,7 +56,7 @@ const credStat = document.getElementById('cred-stat');
 if (credStat) {
   const counterObs = new IntersectionObserver((entries) => {
     entries.forEach(e => {
-      if (e.isIntersecting) { runCounter(credStat, 10000, '+', 1400); counterObs.unobserve(e.target); }
+      if (e.isIntersecting) { runCounter(credStat, 5000, '+', 1400); counterObs.unobserve(e.target); }
     });
   }, { threshold: 0.5 });
   counterObs.observe(credStat);
