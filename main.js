@@ -127,10 +127,10 @@ if (stickyCall && stickyCallClose && heroSection) {
 
 /* Full gallery carousel — in-page, full-bleed */
 const fgImages = [
-  '20190621_164907.jpg', '20190621_170810.jpg', '20190718_115223.jpg',
-  '20190724_134515.jpg', '20210514_131631.jpg', '20210827_151029.jpg',
-  '20220527_144932.jpg', '20230607_135944.jpg', '20240808_142325.jpg',
-  '20250531_104003.jpg'
+  '20250531_104003.jpg', '20190621_164907.jpg', '20190621_170810.jpg',
+  '20190718_115223.jpg', '20190724_134515.jpg', '20210514_131631.jpg',
+  '20210827_151029.jpg', '20220527_144932.jpg', '20230607_135944.jpg',
+  '20240808_142325.jpg'
 ];
 const fgSection = document.getElementById('fullgallery');
 const fgImg = document.getElementById('fg-img');
